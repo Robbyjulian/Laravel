@@ -5,6 +5,7 @@
 <div class="col-12 col-lg-12 col-xl-12 border-light">
         <a href="{{ route('mahasiswa.tambah')}}" class="btn btn-light waves-effect waves-light m-1"> <i class="fa fa-plus"></i> <span>ADD</span> </a>
         <a href="{{ route('mahasiswa.export')}}" class="btn btn-light waves-effect waves-light m-1"> <i class="ti-export"></i> <span>EXCEL XLS</span> </a>
+        {{-- <a href="{{ route('mahasiswa.pdf')}}" class="btn btn-light waves-effect waves-light m-1"> <i class="ti-export"></i> <span>PDF</span> </a> --}}
         <a href="{{ route('mahasiswa.pdf')}}" class="btn btn-light waves-effect waves-light m-1"> <i class="ti-export"></i> <span>PDF</span> </a>
         <button class="btn btn-light waves-effect waves-light m-1" data-toggle="modal" data-target="#importxls"><i class="ti-import"></i> <span>EXCEL XLS</span> </button>
         {{-- <a href="{{ route('mahasiswa.pdf')}}" class="btn btn-light waves-effect waves-light m-1"> <i class="ti-import"></i> <span>EXCEL XLS</span> </a> --}}

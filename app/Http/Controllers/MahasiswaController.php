@@ -183,12 +183,14 @@ class MahasiswaController extends Controller
     }
     public function exportPdf()
     {
+        $mahasiswa = Mahasiswa::paginate(5);
+        return view('mahasiswa.print', compact('mahasiswa'));
         // $pdf = PDF::loadHTML('<h1>Data Mahasiswa</h1>');
         // $pdf = PDF::loadHTML('export.mahasiswapdf', ['mahasiswa' => $mahasiswa]);
-        $mahasiswa = Mahasiswa::all();
-        $pdf = PDF::loadView('export.exportpdf', ['mahasiswa' => $mahasiswa]);
+        // $mahasiswa = Mahasiswa::all();
         // $pdf = PDF::loadView('export.exportpdf', ['mahasiswa' => $mahasiswa]);
-        return $pdf->download('Mahasiswa.pdf');
+        // $pdf = PDF::loadView('export.exportpdf', ['mahasiswa' => $mahasiswa]);
+        // return $pdf->download('Mahasiswa.pdf');
     }
     public function importExcel(Request $request)
     {
